@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active: native   # IMPORTANT
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///Users/saikrishnasudamalla/Desktop/eCommerce project/config-repo
