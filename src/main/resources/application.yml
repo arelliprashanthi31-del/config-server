@@ -6,10 +6,10 @@ spring:
     name: config-server
 
   profiles:
-    active: native   # IMPORTANT
+    active: git   # IMPORTANT
 
   cloud:
     config:
       server:
-        native:
-          search-locations: file:///Users/saikrishnasudamalla/Desktop/eCommerce project/config-repo
+        git:
+          uri: https://github.com/arelliprashanthi31-del/config-repo
